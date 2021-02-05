@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <tuple>
+#include <cmath>
 #include "InputManager.h"
 #include "FileManager.h"
 #include "UI.h"

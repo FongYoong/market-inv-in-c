@@ -247,7 +247,7 @@ void InputManager::InputError(InputErrorType type) {
 	Color::ChangeColor(Color::defaultColor);
 }
 void InputManager::RemoveWhiteSpace(string& s) {
-	s.erase(remove_if(s.begin(), s.end(), isspace), s.end());
+	s.erase(remove_if(s.begin(), s.end(), ::isspace), s.end());
 }
 void InputManager::ToLowerCase(string& s) {
 	std::transform(s.begin(), s.end(), s.begin(), ::tolower);

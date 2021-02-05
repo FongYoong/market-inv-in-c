@@ -40,7 +40,7 @@ ifstream FileManager::ReadFile(const string& path) {
 	return file;
 }
 const bool FileManager::UpdateFile(const string& path, const string& data) {
-	ofstream file(path, ios::out || ios::trunc);
+	ofstream file(path, ios::out | ios::trunc);
 	if (file.fail()) {
 		return false;
 	}
